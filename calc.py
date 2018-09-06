@@ -15,6 +15,9 @@ wholesalecost = (24.95*.6* copies)+ (copies*.75) + 3
 
 print ('The wholesale cost for = {cop} is  {who}'.format(cop=copies, who=wholesalecost))
 
+(2*(80*60+15)+(3*(7*60+12)
+print ('The time you will arrive home is {} to {} is {}'.format())
+
 iv = 82
 fv = 89
 
