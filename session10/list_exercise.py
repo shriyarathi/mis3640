@@ -69,11 +69,10 @@ def chop(t):
     [2, 3]
     """
 
-    for i in range(len(t)):
-        t = #confusion on this part
-        return t 
+  #  for i in range(len(t)):
+    #    return t 
 
-    return
+    
 
 
 def is_sorted(t):
@@ -108,7 +107,9 @@ def is_anagram(word1, word2):
     >>> is_anagram([1, 2, 2], [2, 1, 2])
     Ture
     """
-    return
+    # return sorted (word1) == sorted (word2)
+
+    
 
 
 def has_duplicates(s):
@@ -121,7 +122,10 @@ def has_duplicates(s):
     >>> print(has_duplicates('abba'))
     True
     """
-    return
+    for x in s:
+        if s.count(x)>1:
+            return True
+    return False        
 
 
 def has_adjacent_duplicates(s):
@@ -136,7 +140,12 @@ def has_adjacent_duplicates(s):
     >>> print(has_adjacent_duplicates('abbc'))
     True
     """
-    return
+
+    for i in range(len(s)-1)
+        if str[i] == s [i+1]:
+            return True        
+    return False
+
 
 
 def main():
@@ -158,8 +167,12 @@ def main():
     # print(is_anagram('different', 'letters'))
     # print(is_anagram([1, 2, 2], [2, 1, 2]))
 
-    # print(has_duplicates('cba'))
-    # print(has_duplicates('abba'))
+    print(has_duplicates('cba'))
+    print(has_duplicates('abba'))
+
+   # print(has_adjacent_duplicates('cba'))
+   # print(has_adjacent_duplicates('abca'))
+   # print(has_adjacent_duplicates('abbc'))
 
 
 if __name__ == '__main__':

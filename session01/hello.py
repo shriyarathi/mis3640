@@ -1,10 +1,24 @@
-print ('Please print your name')
+def sed(pattern, replace, source, dest):
+    """Reads a source file and writes the destination file.
+    In each line, replaces pattern with replace.
+    pattern: string
+    replace: string
+    source: string filename
+    dest: string filename
+    """
+    f_source = open(source, 'r')
+    f_dest = open(dest, 'w')
 
-first_name=input()
+    for line in f_source:
+            new_line = line.replace(pattern, replace)
+            f_dest.write(new_line)
 
-print('Please print your last name')
+f_source.close()
+f_dest.close()
 
-last_name=input()
 
-print('Hello,', first_name+' '+last_name)
-
+pattern = 'man'
+replace = 'woman'
+source = 'output.txt'
+dest = 'new_' + source
+sed(pattern, replace, source, dest)

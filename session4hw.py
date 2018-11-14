@@ -13,7 +13,12 @@ c = int(input("Enter the coefficients of :c "))
 
 d = (b**2) - (4*a*c)
 
-s1 = (-b-math.sqrt(d))/(2*a)
-s2 = (-b+math.sqrt(d))/(2*a)
+if d<0 :
+    print ("no real solution")
+    return None 
+
+else:
+    s1 = (-b-math.sqrt(d))/(2*a)
+    s2 = (-b+math.sqrt(d))/(2*a)
 
 print('Solution are {} and {}'.format(s1,s2))
